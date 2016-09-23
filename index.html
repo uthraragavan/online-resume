@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!--
+Project: Online Resume
+Author: Uthra Vijayaragvan
+Date: 09/18/2016
+ -->
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta charset="utf-8">
+    <title>Resume of Uthra Vijayaragavan</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBPL2cIBLI7Dh3qqkW4GkwLMxPurZSb7XA&libraries=places"></script>
+</head>
+
+<body>
+    <div class="container" id="main">
+        <!-- Header -->
+        <header>
+            <div class="row">
+                <div class="col-sm-12 center-content" id="header">
+                    <ul id="topContacts" class="list-inline"></ul>
+                </div>
+            </div>
+        </header>
+        <!-- Section describing Work Experience -->
+        <section>
+            <div class="row">
+                <!-- <div style="clear: both;"></div> -->
+                <div id="workExperience" class="gray col-sm-12">
+                    <h2 class="work-head">Work Experience</h2>
+                </div>
+                <div id="projects" class="col-sm-12">
+                    <h2 class="proj-head">Selected Web Projects</h2>
+                </div>
+            </div>
+        </section>
+        <!-- Section describing Education -->
+        <section>
+            <div class="row">
+                <div id="education" class="gray col-sm-12">
+                    <h2 class="edu-head">Education</h2>
+                </div>
+            </div>
+        </section>
+        <!-- Section For Map showing the locations where I lived and Worked  -->
+        <section>
+            <div class="row">
+                <div id="mapDiv" class="col-sm-12">
+                    <h2 class="map-head">Where I've Lived and Worked</h2>
+                </div>
+            </div>
+        </section>
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div id="lets-connect" class="dark-gray col-sm-12">
+                    <h2 class="orange center-text footer-head">Let's Connect</h2>
+                    <ul id="footerContacts" class="list-inline"></ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+<!-- Script used by this html page -->
+    <script src="js/jQuery.js"></script>
+    <script src="js/helper.js"></script>
+    <script src="js/resumeBuilder.js"></script>
+
+<!-- Script to add a section only if there is an associated schema for it in resumeBuilder.js. If there is an associated schema then the corresponding variables from helper.js would have built the associated html elements. -->
+    <script>
+        if (document.getElementsByClassName('flex-item').length === 0) {
+            document.getElementById('topContacts').style.display = 'none';
+        }
+        if (document.getElementsByTagName('h1').length === 0) {
+            document.getElementById('header').style.display = 'none';
+        }
+        if (document.getElementsByClassName('work-entry').length === 0) {
+            document.getElementById('workExperience').style.display = 'none';
+        }
+        if (document.getElementsByClassName('project-entry').length === 0) {
+            document.getElementById('projects').style.display = 'none';
+        }
+        if (document.getElementsByClassName('education-entry').length === 0) {
+            document.getElementById('education').style.display = 'none';
+        }
+        if (document.getElementsByClassName('flex-item').length === 0) {
+            document.getElementById('lets-connect').style.display = 'none';
+        }
+        if (document.getElementById('map') === null) {
+            document.getElementById('mapDiv').style.display = 'none';
+        }
+    </script>
+</body>
+
+</html>
