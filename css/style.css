@@ -15,8 +15,8 @@ h3,
 h4,
 h5,
 h6 {
-  padding:0px;
-  margin:0px;
+  padding: 0px;
+  margin: 0px;
   font-family: "Roboto", sans-serif;
 }
 
@@ -62,7 +62,7 @@ h2,
 h3,
 h4,
 h5 {
-  padding:10px 5%;
+  padding: 10px 5%;
 }
 
 
@@ -142,7 +142,7 @@ a {
 }
 
 .flex-item{
-  text-align:left;
+  text-align: left;
   text-overflow: ellipsis;
 }
 
