@@ -6,25 +6,25 @@ Date: 09/18/2016
 //Schema for populating the html. Each object has an associated display function with it.
 //name,role.welcome message, skills, and picture.
 var bio = {
-    name: "Uthra Vijayaragavan",
-    role: "Front-end Web Developer",
-    contacts: {
+    "name": "Uthra Vijayaragavan",
+    "role": "Front-end Web Developer",
+    "contacts": {
         "mobile": "123-456-7890",
         "email": "uthra.ragavan@gmail.com",
         "github": "uthraragavan",
         "blog": "https://mycareerblogweb.wordpress.com/",
         "location": "Seattle, WA"
     },
-    welcome: "Welcome to my web page!",
-    skills: [
+    "welcome": "Welcome to my web page!",
+    "skills": [
         "C/C++",
         "MS Visual Studio/Eclipse",
         "Oracle/SQL",
         "HTML/CSS/JavaScript/jQuery/Bootstrap",
         "Git/SVN/CVS"
     ],
-    biopic: "images/mypic.png",
-    display: function() {
+    "biopic": "images/mypic.png",
+    "display": function() {
         displayheader();
         displaycontacts();
         displayskills();
@@ -33,33 +33,33 @@ var bio = {
 
 // Array of schools and online courses.
 var education = {
-    schools: [{
-        name: "The University of Texas at Austin",
-        location: "Austin, TX",
-        degree: "Master of Science",
-        majors: "Operations Research and Industrial Engineering",
-        dates: "Sep 2008 - May 2010",
-        url: "http://www.utexas.edu"
+    "schools": [{
+        "name": "The University of Texas at Austin",
+        "location": "Austin, TX",
+        "degree": "Master of Science",
+        "majors": "Operations Research and Industrial Engineering",
+        "dates": "Sep 2008 - May 2010",
+        "url": "http://www.utexas.edu"
     }, {
-        name: "University of Madras",
-        location: "Chennai, India",
-        degree: "Bachelor of Technology",
-        majors: "Information Technology",
-        dates: "Sep 2000 - May 2004",
-        url: "http://www.unom.ac.in"
+        "name": "University of Madras",
+        "location": "Chennai, India",
+        "degree": "Bachelor of Technology",
+        "majors": "Information Technology",
+        "dates": "Sep 2000 - May 2004",
+        "url": "http://www.unom.ac.in"
     }],
-    onlineCourses: [{
-        title: "Udacity Front End Nanodegree",
-        school: "Udacity",
-        dates: "Sep 2016 - Present",
-        url: "http://udacity.com"
+    "onlineCourses": [{
+        "title": "Udacity Front End Nanodegree",
+        "school": "Udacity",
+        "dates": "Sep 2016 - Present",
+        "url": "http://udacity.com"
     }, {
-        title: "Project Management Training",
-        school: "Whizlabs",
-        dates: "Sep 2015 - Dec 2015",
-        url: "http://www.whizlabs.com"
+        "title": "Project Management Training",
+        "school": "Whizlabs",
+        "dates": "Sep 2015 - Dec 2015",
+        "url": "http://www.whizlabs.com"
     }],
-    display: function() {
+    "display": function() {
         displayschool();
         displayonlineclasses();
     }
@@ -67,73 +67,73 @@ var education = {
 
 //Array of jobs
 var work = {
-    jobs: [{
-        employer: "Goldman Sachs",
-        title: "Analyst",
-        location: "Salt Lake City, UT",
-        dates: "July 2010 - April 2012",
-        description: "<ul class='work-desc'><li>Global stakeholder management ensuring smooth operation of GS’s production and QA order management systems for cross-continental trading markets.</li><li>Led production and QA teams supporting end-end trading software systems (including Futures, Options and Equities) from client order submission, through order management systems within GS, until order execution in the exchange.</li><li>Managed the 24x7 availability of critical trading software components.</li><li>Project lead for automating the manual procedures of morning and evening checkouts in order to maintain a defect-free order flow environment.</li><li>Led deployment projects for individual software components in production and QA.</li></ul>"
+    "jobs": [{
+        "employer": "Goldman Sachs",
+        "title": "Analyst",
+        "location": "Salt Lake City, UT",
+        "dates": "July 2010 - April 2012",
+        "description": "<ul class='work-desc'><li>Global stakeholder management ensuring smooth operation of GS’s production and QA order management systems for cross-continental trading markets.</li><li>Led production and QA teams supporting end-end trading software systems (including Futures, Options and Equities) from client order submission, through order management systems within GS, until order execution in the exchange.</li><li>Managed the 24x7 availability of critical trading software components.</li><li>Project lead for automating the manual procedures of morning and evening checkouts in order to maintain a defect-free order flow environment.</li><li>Led deployment projects for individual software components in production and QA.</li></ul>"
     }, {
-        employer: "Burlington Northern Santa Fe Railway",
-        title: "Intern Fellow",
-        location: "Fortworth, TX",
-        dates: "May 2009 - May 2010",
-        description: "<ul class='work-desc'><li>Formulated and implemented optimization models for locomotive assignment and train scheduling.</li><li>Spreadsheet modeling for building model prototypes.</li><li>Data analysis, processing and clean-up to form model inputs.</li><li>Developed front end GUI as an interface to the model.</li></ul>"
+        "employer": "Burlington Northern Santa Fe Railway",
+        "title": "Intern Fellow",
+        "location": "Fortworth, TX",
+        "dates": "May 2009 - May 2010",
+        "description": "<ul class='work-desc'><li>Formulated and implemented optimization models for locomotive assignment and train scheduling.</li><li>Spreadsheet modeling for building model prototypes.</li><li>Data analysis, processing and clean-up to form model inputs.</li><li>Developed front end GUI as an interface to the model.</li></ul>"
     }, {
-        employer: "The University of Texas at Austin",
-        title: "Graduate Research Assistant",
-        location: "Austin, TX",
-        dates: "Spring 2009",
-        description: "<ul class='work-desc'><li>Project lead for the design and development of multimedia enabled tutorial software for the Austin Independent School district.</li></ul>"
+        "employer": "The University of Texas at Austin",
+        "title": "Graduate Research Assistant",
+        "location": "Austin, TX",
+        "dates": "Spring 2009",
+        "description": "<ul class='work-desc'><li>Project lead for the design and development of multimedia enabled tutorial software for the Austin Independent School district.</li></ul>"
     }, {
-        employer: "Hewlett Packard",
-        title: "Software Engineer",
-        location: "Bangalore, India",
-        dates: "June 2005 - Jan 2008",
-        description: "<ul class='work-desc'><li>Team lead for design and development of SAN and NAS (Storage Area Network and Network Attached Storage) software solutions for small and medium businesses.</li><li>Prototype development for new ideas and concepts in the domain of SAN solutions as part of the idea demonstration events.</li><li>Performed Software Quality Assurance for the team.</li><li>Mentor for junior project team members.</li><li>Coordinator for weekly project presentations to global partner teams.</li>"
+        "employer": "Hewlett Packard",
+        "title": "Software Engineer",
+        "location": "Bangalore, India",
+        "dates": "June 2005 - Jan 2008",
+        "description": "<ul class='work-desc'><li>Team lead for design and development of SAN and NAS (Storage Area Network and Network Attached Storage) software solutions for small and medium businesses.</li><li>Prototype development for new ideas and concepts in the domain of SAN solutions as part of the idea demonstration events.</li><li>Performed Software Quality Assurance for the team.</li><li>Mentor for junior project team members.</li><li>Coordinator for weekly project presentations to global partner teams.</li>"
     }, {
-        employer: "Sify Ltd",
-        title: "Software Engineer",
-        location: "Chennai, India",
-        dates: "June 2004 - June 2005",
-        description: "<ul class='work-desc'><li>Development of application software and front-end GUI for broadband Internet solutions.</li><li>Design and development of software for automatic application of Windows patches to internal network hosts</li></ul>"
+        "employer": "Sify Ltd",
+        "title": "Software Engineer",
+        "location": "Chennai, India",
+        "dates": "June 2004 - June 2005",
+        "description": "<ul class='work-desc'><li>Development of application software and front-end GUI for broadband Internet solutions.</li><li>Design and development of software for automatic application of Windows patches to internal network hosts</li></ul>"
     }],
-    display: function() {
+    "display": function() {
         displaywork();
     }
 };
 
 //Array of projects
 var projects = {
-    projects: [{
-        title: "Animal Trading Cards",
-        url: "https://github.com/uthraragavan/animal-trading",
-        dates: "2016",
-        description: "Project demosntrating knowledge HTML and CSS.",
-        images: [
+    "projects": [{
+        "title": "Animal Trading Cards",
+        "url": "https://github.com/uthraragavan/animal-trading",
+        "dates": "2016",
+        "description": "Project demosntrating knowledge HTML and CSS.",
+        "images": [
             "images/bengal-tiger.jpg",
             "images/animalproto.jpg"
         ]
     }, {
-        title: "Mockup to Article",
-        url: "https://github.com/uthraragavan/frontend-mockup-to-article-master",
-        dates: "2016",
-        description: "Project usage of HTML and CSS.",
-        images: [
+        "title": "Mockup to Article",
+        "url": "https://github.com/uthraragavan/frontend-mockup-to-article-master",
+        "dates": "2016",
+        "description": "Project usage of HTML and CSS.",
+        "images": [
             "images/mockup.gif",
             "images/mockupproto.jpg"
         ]
     }, {
-        title: "Portfolio",
-        url: "https://github.com/uthraragavan/portfolio",
-        dates: "2016",
-        description: "Extensive usage of HTML,CSS and Bootstrap.",
-        images: [
+        "title": "Portfolio",
+        "url": "https://github.com/uthraragavan/portfolio",
+        "dates": "2016",
+        "description": "Extensive usage of HTML,CSS and Bootstrap.",
+        "images": [
             "images/web.jpg",
             "images/portproto.jpg"
         ]
     }],
-    display: function() {
+    "display": function() {
         displayprojects();
     }
 };
