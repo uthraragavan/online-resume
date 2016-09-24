@@ -112,6 +112,10 @@ a {
   background-color: #f5ae23;
 }
 
+.yellow {
+  background-color: #BDC3C7;
+}
+
 .orange-text {
   color: #f5ae23;
 }
@@ -146,14 +150,14 @@ a {
   text-overflow: ellipsis;
 }
 
-.flex-box {
+/*.flex-box {
   display: -webkit-flex;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 10px;
-}
+}*/
 
 .flex-column {
   display: flex;
